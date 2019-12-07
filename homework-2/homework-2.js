@@ -98,12 +98,18 @@ function division(a,b){
 //(использовать функции из пункта 3) и вернуть полученное значение (использовать switch). 
 
 function mathOperation(arg1, arg2, operation){
-   switch(operation){
-       case "+":
+    switch(operation){
+        case "+":
            return addition(arg1,arg2);
-       case "-":
+        case "-":
            return subtr (arg1,arg2);
-        
+        case "*":
+            return mult (arg1,arg2);
+        case "/":
+            return subtr (arg1,arg2);
+        default:
+            alert("incorrect operation!");
+            return null;
    } 
 }
 
