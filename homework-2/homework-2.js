@@ -126,3 +126,6 @@ function power(val,pow){
     }
     return val*power(val,pow-1);
 }
+alert("2**8="+power(2,8)); 
+
+//2**8=256
