@@ -91,6 +91,17 @@ function division(a,b){
     return a/b;
 }
 
+alert("subtr(9,2)="+subtr(9,2));
+//subtr(9,2)=7
+
+alert("addition(10,-3)="+addition(10,-3));
+//addition(10,-3)=7
+
+alert("mult(5,5)="+mult(5,5));
+//mult(5,5)=25
+
+alert("division(5,-2)="+division(5,-2));
+//division(5,-2)=-2.5
 
 //### 6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), 
 //где arg1, arg2 – значения аргументов, operation – строка с названием операции. 
