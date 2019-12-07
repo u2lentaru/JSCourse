@@ -124,6 +124,9 @@ function mathOperation(arg1, arg2, operation){
    } 
 }
 
+alert("mathOperation(5,2,\"+\")="+mathOperation(5,2,"+"));
+//mathOperation(5,2,"+")=7
+
 //### 7. *Сравнить null и 0. Попробуйте объяснить результат. 
 
 alert(null == 0);
