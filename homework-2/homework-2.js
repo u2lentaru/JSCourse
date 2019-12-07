@@ -41,37 +41,45 @@ if (a>=0 && b>=0) || (a<0 && b<0){
 var a=parseInt(Math.random()*(15-1)+1);
 switch(a){
     case 1:
-        alert("1");
+        console.log("1");
     case 2:
-        alert("2");    
+        console.log("2");    
     case 3:
-        alert("3");
+        console.log("3");
     case 4:
-        alert("4");
+        console.log("4");
     case 5:
-        alert("5");
+        console.log("5");
     case 6:
-        alert("6");
+        console.log("6");
     case 7:
-        alert("7");
+        console.log("7");
     case 8:
-        alert("8");
+        console.log("8");
     case 9:
-        alert("9");
+        console.log("9");
     case 10:
-        alert("10");
+        console.log("10");
     case 11:
-        alert("11");
+        console.log("11");
     case 12:
-        alert("12");
+        console.log("12");
     case 13:
-        alert("13");
+        console.log("13");
     case 14:
-        alert("14");
+        console.log("14");
     case 15:
-        alert("15");
+        console.log("15");
 }
 
+//index.html:26 8
+//index.html:28 9
+//index.html:30 10
+//index.html:32 11
+//index.html:34 12
+//index.html:36 13
+//index.html:38 14
+//index.html:40 15
 
 //### 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. 
 //Обязательно использовать оператор return. 
