@@ -75,6 +75,17 @@ switch(a){
 //### 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. 
 //Обязательно использовать оператор return. 
 
+function subtr(a,b){
+    return a-b;
+}
+
+function addition(a,b){
+    return a+=b;
+}
+
+function mult(a,b){
+    return a*b;
+}
 
 
 //### 6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), 
