@@ -22,16 +22,16 @@
 //если а и b отрицательные, вывести их произведение;
 //если а и b разных знаков, вывести их сумму; ноль можно считать положительным числом. ### 
 
-var a=Math.random();
-var b=Math.random();
+var a=parseInt(Math.random())*10;
+var b=parseInt(Math.random())*10;
 if (a>=0) && (b>=0){
-    alert(a-b);
+    alert("a="+a+" b="+b+", a-b="+a-b);
 }
 if (a<0) && (b<0){
-    alert(a*b);
+    alert("a="+a+" b="+b+", a*b="+a*b);
 }
 if (a>=0 && b>=0) || (a<0 && b<0){
-    alert(a+=b);
+    alert("a="+a+" b="+b+", a+b="+a+=b);
 }
 
 
