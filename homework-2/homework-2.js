@@ -87,6 +87,10 @@ function mult(a,b){
     return a*b;
 }
 
+function division(a,b){
+    return a/b;
+}
+
 
 //### 6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), 
 //где arg1, arg2 – значения аргументов, operation – строка с названием операции. 
