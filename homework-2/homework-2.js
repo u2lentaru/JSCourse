@@ -98,7 +98,13 @@ function division(a,b){
 //(использовать функции из пункта 3) и вернуть полученное значение (использовать switch). 
 
 function mathOperation(arg1, arg2, operation){
-    
+   switch(operation){
+       case "+":
+           return addition(arg1,arg2);
+       case "-":
+           return subtr (arg1,arg2);
+        
+   } 
 }
 
 //### 7. *Сравнить null и 0. Попробуйте объяснить результат. 
