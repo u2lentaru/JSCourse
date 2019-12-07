@@ -41,36 +41,37 @@ if (a>=0 && b>=0) || (a<0 && b<0){
 var a=parseInt(Math.random()*(15-1)+1);
 switch(a){
     case 1:
-        alert(a);
+        alert("1");
     case 2:
-        alert(a);    
+        alert("2");    
     case 3:
-        alert(a);
+        alert("3");
     case 4:
-        alert(a);
+        alert("4");
     case 5:
-        alert(a);
+        alert("5");
     case 6:
-        alert(a);
+        alert("6");
     case 7:
-        alert(a);
+        alert("7");
     case 8:
-        alert(a);
+        alert("8");
     case 9:
-        alert(a);
+        alert("9");
     case 10:
-        alert(a);
+        alert("10");
     case 11:
-        alert(a);
+        alert("11");
     case 12:
-        alert(a);
+        alert("12");
     case 13:
-        alert(a);
+        alert("13");
     case 14:
-        alert(a);
+        alert("14");
     case 15:
-        alert(a);
+        alert("15");
 }
+
 
 //### 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. 
 //Обязательно использовать оператор return. 
