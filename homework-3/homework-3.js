@@ -61,7 +61,7 @@ for (var i=0; i<10; console.log(i++));
 //xxxx
 //xxxxx
 
-for(var i = 1, pyramid = " "; i <= 20; i++){
-    pyramid += "x";
-    console.log(pyramid);
-}
+//for(var i = 1, pyramid = " "; i <= 20; i++){
+//    pyramid += "x";
+//    console.log(pyramid);
+//}
