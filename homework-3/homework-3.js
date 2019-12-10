@@ -8,17 +8,19 @@ while (i<=100) {
 }
 i=1;
 while (i<=100) {
-    p=i++;
+    p=i+1;
     while (p<=100) {
-        if !i%p
-            arr[i]=0;
+        if (i%p==0) {
+            arr[i]=0;    
+        }
     }
     i++;
 }
 i=1;
 while (i<=100) {
-    if (!arr[i])
+    if (arr[i]!=0) {
         console.log(arr[i]);
+    }
     i++;
 }
 
