@@ -39,6 +39,18 @@ while (i<=100) {
 //4.*Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. Выглядеть это должно так:
 //for(…){// здесь пусто} 
 
+for (var i=0; i<10; console.log(i++));
+
+//index.html:9 0
+//index.html:9 1
+//index.html:9 2
+//index.html:9 3
+//index.html:9 4
+//index.html:9 5
+//index.html:9 6
+//index.html:9 7
+//index.html:9 8
+//index.html:9 9
 
 
 //5. *Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды 
@@ -48,3 +60,8 @@ while (i<=100) {
 //xxx
 //xxxx
 //xxxxx
+
+for(var i = 1, pyramid = " "; i <= 20; i++){
+    pyramid += "x";
+    console.log(pyramid);
+}
