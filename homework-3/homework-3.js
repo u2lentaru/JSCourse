@@ -51,6 +51,8 @@ while (i<=100) {
 //index.html:30 89
 //index.html:30 97
 
+
+
 //2. С этого урока начинаем работать с функционалом интернет-магазина. Предположим, есть сущность корзины. 
 //Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров.
 
@@ -77,6 +79,7 @@ for (var i=0; i<10; console.log(i++));
 //index.html:9 7
 //index.html:9 8
 //index.html:9 9
+
 
 
 //5. *Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды 
@@ -111,4 +114,3 @@ for(var i = 1, prm = " "; i <= 20; i++){
 //index.html:11  xxxxxxxxxxxxxxxxx
 //index.html:11  xxxxxxxxxxxxxxxxxx
 //index.html:11  xxxxxxxxxxxxxxxxxxx
-//index.html:11 
