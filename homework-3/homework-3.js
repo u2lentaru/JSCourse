@@ -7,6 +7,7 @@ while (i<=100) {
     i++;
 }
 i=2;
+arr[1]=0;
 while (i<=100) {
     p=i+1;
     while (p<=100) {
@@ -17,7 +18,7 @@ while (i<=100) {
     }
     i++;
 }
-i=2;
+i=1;
 while (i<=100) {
     if (arr[i]!=0) {
         console.log(arr[i]);
