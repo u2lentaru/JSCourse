@@ -6,12 +6,12 @@ while (i<=100) {
     arr.push(i);
     i++;
 }
-i=1;
+i=2;
 while (i<=100) {
     p=i+1;
     while (p<=100) {
         if (p%i==0) {
-            arr[p]=0;    
+            arr[p]=0; 
         }
         p++;
     }
@@ -24,6 +24,33 @@ while (i<=100) {
     }
     i++;
 }
+
+index.html:30 1
+index.html:30 2
+index.html:30 3
+index.html:30 5
+index.html:30 7
+index.html:30 11
+index.html:30 13
+index.html:30 17
+index.html:30 19
+index.html:30 23
+index.html:30 29
+index.html:30 31
+index.html:30 37
+index.html:30 41
+index.html:30 43
+index.html:30 47
+index.html:30 53
+index.html:30 59
+index.html:30 61
+index.html:30 67
+index.html:30 71
+index.html:30 73
+index.html:30 79
+index.html:30 83
+index.html:30 89
+index.html:30 97
 
 //2. С этого урока начинаем работать с функционалом интернет-магазина. Предположим, есть сущность корзины. 
 //Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров.
