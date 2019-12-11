@@ -70,7 +70,7 @@ function countBasketPrice(shop){
 }
 
 var shop = [];
-for (var i,i<10,i++) {
+for (var i;i<10;i++){
     shop[i]=parseInt(Math.random()*700+300);
     console.log("Товар №"+(i+1)+" стоит "+shop[i]+"\n");
 }
