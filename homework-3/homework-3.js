@@ -61,8 +61,28 @@ for (var i=0; i<10; console.log(i++));
 //xxxx
 //xxxxx
 
-//for(var i = 1, pyramid = " "; i <= 20; i++){
-//    pyramid += "x";
-//    console.log(pyramid);
-//}
-//
+for(var i = 1, prm = " "; i <= 20; i++){
+    prm += "x";
+    console.log(prm);
+}
+
+//index.html:11  x
+//index.html:11  xx
+//index.html:11  xxx
+//index.html:11  xxxx
+//index.html:11  xxxxx
+//index.html:11  xxxxxx
+//index.html:11  xxxxxxx
+//index.html:11  xxxxxxxx
+//index.html:11  xxxxxxxxx
+//index.html:11  xxxxxxxxxx
+//index.html:11  xxxxxxxxxxx
+//index.html:11  xxxxxxxxxxxx
+//index.html:11  xxxxxxxxxxxxx
+//index.html:11  xxxxxxxxxxxxxx
+//index.html:11  xxxxxxxxxxxxxxx
+//index.html:11  xxxxxxxxxxxxxxxx
+//index.html:11  xxxxxxxxxxxxxxxxx
+//index.html:11  xxxxxxxxxxxxxxxxxx
+//index.html:11  xxxxxxxxxxxxxxxxxxx
+//index.html:11 
