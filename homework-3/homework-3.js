@@ -8,7 +8,7 @@ while (i<=100) {
 }
 i=2;
 arr[1]=0;
-while (i<=100) {
+while (i<=50) {
     p=i+1;
     while (p<=100) {
         if (p%i==0) {
