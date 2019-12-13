@@ -39,7 +39,7 @@ console.log(parseDigits());
 //{‘единицы’: 7}
 //78678
 //null
-//ytryt
+//765wjyhfg
 //null
 
 
