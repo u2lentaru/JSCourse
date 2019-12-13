@@ -4,24 +4,45 @@
 //{‘единицы’: 5, ‘десятки’: 4, ‘сотни’: 2}. Если число превышает 999, необходимо выдать 
 //соответствующее сообщение с помощью console.log и вернуть пустой объект.
 
-var instr = prompt("Введите число");
-if (isNaN(instr)) {
-    alert("Некорректное значение!");
-}
-else {
-    if ((parseInt(instr)<0) || (parseInt(instr)>999)) {
-        alert("Выход за пределы диапазона 0...999!");
+
+function parseDigits() {
+    var instr = prompt("Введите число");
+    if (isNaN(instr)) {
+        alert("Некорректное значение!");
+        return null;
     }
     else {
-        var arr=instr.split('');
-        var outstr="{"; digits=["‘единицы’: ",",‘десятки’: ",",‘сотни’: "]
-        for (var i=0;i<arr.length;i++) {
-            outstr+=digits[i]+arr[arr.length-i-1];
+        if ((parseInt(instr)<0) || (parseInt(instr)>999)) {
+            alert("Выход за пределы диапазона 0...999!");
+            return null;
         }
-        outstr+="}";
-        document.write(outstr);
+        else {
+            var arr=instr.split('');
+            var outstr="{"; digits=["‘единицы’: ",",‘десятки’: ",",‘сотни’: "]
+            for (var i=0;i<arr.length;i++) {
+                outstr+=digits[i]+arr[arr.length-i-1];
+            }
+            outstr+="}";
+            return outstr;
+        }
     }
 }
+
+//document.write(parseDigits());
+console.log(parseDigits());
+
+//245
+//{‘единицы’: 5,‘десятки’: 4,‘сотни’: 2}
+//56
+//{‘единицы’: 6,‘десятки’: 5}
+//7
+//{‘единицы’: 7}
+//78678
+//null
+//ytryt
+//null
+
+
 
 //2. Для игры, реализованной на уроке, добавить возможность вывода хода номер n 
 //(номер задается пользователем)
