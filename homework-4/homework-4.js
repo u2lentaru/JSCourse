@@ -13,7 +13,8 @@ else {
         alert("Выход за пределы диапазона 0...999!");
     }
     else {
-        document.write(instr);
+        var arr=instr.split('');
+        document.write(arr);
     }
 }
 
