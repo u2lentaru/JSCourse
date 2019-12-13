@@ -14,7 +14,7 @@ else {
     }
     else {
         var arr=instr.split('');
-        var outstr="{"; digits=["единицы:","десятки:","сотни:"]
+        var outstr="{"; digits=["‘единицы’: ",",‘десятки’: ",",‘сотни’: "]
         for (var i=0;i<arr.length;i++) {
             outstr+=digits[i]+arr[arr.length-i-1];
         }
