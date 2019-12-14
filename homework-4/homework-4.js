@@ -234,13 +234,17 @@ questions[4]= {
 
 var answ = 0,sum = 0;
 for (var i in questions) {
-	answ = prompt(questions[i].q+"\n"+questions[i].a1+"\n"+questions[i].a2+"\n"+questions[i].a1+"\n");
+	answ = prompt(questions[i].q+"\n"+questions[i].a1+"\n"+questions[i].a2+"\n"+questions[i].a3+"\n");
 	if (answ == questions[i].correct) {
-		sum += questions.price;
+		sum += questions[i].price;
 	}
 	else {
-		sum -= questions.price;
+		sum -= questions[i].price;
 	}
 }
 
-document.write("Ваш выигрыш "+sum);
+document.write("Ваш выигрыш составил"+sum);
+
+
+
+//Ваш выигрыш составил 1600
