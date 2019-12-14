@@ -9,39 +9,48 @@ function parseDigits() {
     var instr = prompt("Введите число");
     if (isNaN(instr)) {
         alert("Некорректное значение!");
-        return null;
+        return obj;
     }
     else {
         if ((parseInt(instr)<0) || (parseInt(instr)>999)) {
             alert("Выход за пределы диапазона 0...999!");
-            return null;
+            return obj;
         }
         else {
             var arr=instr.split('');
-            var outstr="{"; digits=["‘единицы’: ",",‘десятки’: ",",‘сотни’: "]
+            /*var outstr="{"; digits=["‘единицы’: ",",‘десятки’: ",",‘сотни’: "]
             for (var i=0;i<arr.length;i++) {
                 outstr+=digits[i]+arr[arr.length-i-1];
             }
-            outstr+="}";
-            return outstr;
+			outstr+="}";*/
+			if (arr[0]!=0) {
+				obj.единицы=arr[0];
+			}
+			if (arr[1]!=0) {
+				obj.десятки=arr[1];
+			}
+			if (arr[2]!=0) {
+				obj.сотни=arr[2];
+			}
+			//return outstr;
+			return obj;
         }
     }
 }
 
 //document.write(parseDigits());
+var obj= {};
 console.log(parseDigits());
 
 //245
-//{‘единицы’: 5,‘десятки’: 4,‘сотни’: 2}
-//56
-//{‘единицы’: 6,‘десятки’: 5}
-//7
-//{‘единицы’: 7}
-//78678
-//null
-//765wjyhfg
-//null
+//Object
+//единицы: "2"
+//десятки: "4"
+//сотни: "5"
 
+//dsrtjs
+//Некорректное значение!
+//{}
 
 
 //2. Для игры, реализованной на уроке, добавить возможность вывода хода номер n 
