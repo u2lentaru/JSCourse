@@ -68,8 +68,8 @@ guessNumber();
 var answerNumber = 0;
 do {
     answerNumber = prompt("Введите номер ответа (-1 - выход)", 0);
-    if ((isNaN(answerNumber)) || ((isNaN(answerNumber)<-1) || (isNaN(answerNumber)>arrAnswers.length))) {
-        alert("Некорректное значеник!");
+    if ((isNaN(answerNumber)) || ((parseInt(answerNumber)==0) || (parseInt(answerNumber)<-1) || (parseInt(answerNumber)>arrAnswers.length))) {
+        alert("Некорректное значение!");
         continue;
     }
     if (parseInt(answerNumber) != -1) {
