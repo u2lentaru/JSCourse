@@ -189,3 +189,58 @@ function checkNumber(myresult){//1234
 
 
 //3. *На базе игры, созданной на уроке, реализовать игру «Кто хочет стать миллионером?»
+
+var questions = [];
+questions[0]= {
+	q:"2*2?",
+	a1:1,
+	a2:2,
+	a3:4,
+	correct:4,
+	price:100
+}
+questions[1]= {
+	q:"3*3?",
+	a1:1,
+	a2:3,
+	a3:9,
+	correct:9,
+	price:200
+}
+questions[2]= {
+	q:"4*4?",
+	a1:1,
+	a2:4,
+	a3:16,
+	correct:16,
+	price:300
+}
+questions[3]= {
+	q:"5*5?",
+	a1:1,
+	a2:25,
+	a3:5,
+	correct:25,
+	price:500
+}
+questions[4]= {
+	q:"7*7?",
+	a1:1,
+	a2:7,
+	a3:49,
+	correct:49,
+	price:700
+}
+
+var answ = 0,sum = 0;
+for (var i in questions) {
+	answ = prompt(questions[i].q+"\n"+questions[i].a1+"\n"+questions[i].a2+"\n"+questions[i].a1+"\n");
+	if (answ == questions[i].correct) {
+		sum += questions.price;
+	}
+	else {
+		sum -= questions.price;
+	}
+}
+
+document.write("Ваш выигрыш "+sum);
