@@ -70,7 +70,7 @@ do {
     answerNumber = prompt("Введите номер ответа (-1 - выход)", 0);
     if ((isNaN(answerNumber)) || ((isNaN(answerNumber)<-1) || (isNaN(answerNumber)>arrAnswers.length)))
     if (parseInt(answerNumber) != -1) {
-        alert(arrAnswers[parseInt(answerNumber)]);
+        alert(arrAnswers[parseInt(answerNumber)-1]);
     }
 } while (parseInt(answerNumber) != -1);
 
