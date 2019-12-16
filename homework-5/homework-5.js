@@ -2,6 +2,24 @@
 //своему желанию. Доска должна быть разлинована соответствующим образом, т.е. чередовать черные и 
 //белые ячейки. Строки должны нумероваться числами от 1 до 8, столбцы – латинскими буквами A, B, C, D, E, F, G, H.
 
+const cells = [];
+for(var i=0;i<64;i++){
+  cells.push({
+    color: i%2?'black':'white',
+    x: i%8,
+    y: ~~(i/8)//floor?
+  });
+}
+var node;
+for (var i in cells) {
+    node = document.createElement('div');
+    node.width = '30px';
+    node.height = '30px';
+    node.style.color = cells[i].color;
+    node.x = cells[i].x*30+'px';
+    node.y = cells[i].y*30+'px';
+}
+
 
 
 //2. Заполнить созданную таблицу буквами, отвечающими за шахматную фигуру, например К – король, 
