@@ -4,22 +4,31 @@
 
 const cells = [];
 for(var i=0;i<64;i++){
+  //document.write(i);
   cells.push({
     color: i%2?'black':'white',
     x: i%8,
     y: ~~(i/8)//floor?
   });
 }
-var body = document.getElementsByTagName("body");
+var mbd = document.getElementsByTagName("body");
 var node;
+    document.write(cells.length);
 for (var i in cells) {
     node = document.createElement("div");
-    body.appendChild(node);
-    node.width = '30px';
-    node.height = '30px';
-    node.style.color = cells[i].color;
-    node.x = cells[i].x*30+'px';
-    node.y = cells[i].y*30+'px';
+    //document.write("create");
+    //mbd.appendChild(node);
+    node.style.width = '30px';
+    node.style.height = '30px';
+    //node.style.backgroundColor = 'black';
+    //node.innerHTML('<p>kjh</p>');
+    node.style.backgroundColor = cells[i].color;
+    //node.style.float = 'left';
+    node.left = cells[i].x*30+'px';
+    node.top = cells[i].y*30+'px';
+    //list1.appendChild(node);
+    mbd[0].appendChild(node);
+    //document.write("append");
 }
 
 //2. Заполнить созданную таблицу буквами, отвечающими за шахматную фигуру, например К – король, 
