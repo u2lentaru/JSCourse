@@ -10,17 +10,17 @@ for(var i=0;i<64;i++){
     y: ~~(i/8)//floor?
   });
 }
+var body = document.getElementsByTagName("body");
 var node;
 for (var i in cells) {
-    node = document.createElement('div');
+    node = document.createElement("div");
+    body.appendChild(node);
     node.width = '30px';
     node.height = '30px';
     node.style.color = cells[i].color;
     node.x = cells[i].x*30+'px';
     node.y = cells[i].y*30+'px';
 }
-
-
 
 //2. Заполнить созданную таблицу буквами, отвечающими за шахматную фигуру, например К – король, 
 //Ф – ферзь и т.п., причем все фигуры должны стоять на своих местах и быть соответственно черными и белыми.
