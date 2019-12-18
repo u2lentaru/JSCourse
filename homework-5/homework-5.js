@@ -56,9 +56,8 @@ function drawChessBoard(){
     var tdd = document.createElement('td');
     tdd.style.width='50px';
     tdd.style.height='50px';
-    var n=i+1;
-    tdd.innerHTML=n;
-    td.style.transform='rotate(180deg)';
+    tdd.innerHTML=i+1;
+    tdd.style.transform='rotate(180deg)';
     tr.appendChild(tdd);
       
       table.appendChild(tr);
