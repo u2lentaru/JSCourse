@@ -23,7 +23,7 @@ function drawChessBoard(){
   }
   table.appendChild(trr);
   
-  //генерим ячейки
+  //создаём ячейки
   for(var i = 0; i<8; i++){
       var tr = document.createElement('tr');
       
@@ -31,7 +31,7 @@ function drawChessBoard(){
       var tdd = document.createElement('td');
       tdd.style.width='50px';
       tdd.style.height='50px';
-      tdd.innerHTML=8-i;
+      tdd.innerHTML=i+1;
       tr.appendChild(tdd);
       
       for(var j=0; j<8; j++){
@@ -51,10 +51,20 @@ function drawChessBoard(){
           tr.appendChild(td);
           flag=!flag;
       }
+      
+    //создаём правую колонку цифр
+    var tdd = document.createElement('td');
+    tdd.style.width='50px';
+    tdd.style.height='50px';
+    var n=i+1;
+    tdd.innerHTML=n;
+    td.style.transform='rotate(180deg)';
+    tr.appendChild(tdd);
+      
       table.appendChild(tr);
   }
   
-  //генерим буквы
+  //буквы
   trr = document.createElement('tr');
   for(var k = 0; k<9; k++){
       
