@@ -62,8 +62,23 @@ function drawChessBoard(){
           if (i == 1){
               td.innerHTML='&#9817;';
           }
+          if ((i == 7) && ((j == 0) || (j == 7))){
+              td.innerHTML='&#9814;';
+          }
+          if ((i == 7) && ((j == 1) || (j == 6))){
+              td.innerHTML='&#9816;';
+          }
+          if ((i == 7) && ((j == 2) || (j == 5))){
+              td.innerHTML='&#9815;';
+          }
+          if ((i == 7) && (j == 3)){
+              td.innerHTML='&#9813;';
+          }
+          if ((i == 7) && (j == 4)){
+              td.innerHTML='&#9812;';
+          }
           if (i == 6){
-             td.innerHTML='&#9823;';
+              td.innerHTML='&#9823;';
           }
 
           if(flag){
