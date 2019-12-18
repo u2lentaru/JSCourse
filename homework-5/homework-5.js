@@ -113,10 +113,8 @@ function drawChessBoard(){
         td.style.height='50px';
         td.style.background='white';
         td.innerHTML=arr[k];
-        //td.style.transform='rotate(180deg)';
         
-        trr.appendChild(td);
-        
+        trr.appendChild(td);       
     }
     table.appendChild(trr);
     
