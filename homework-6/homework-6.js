@@ -21,7 +21,29 @@
 </html>*/
 
 //hw_6_1.js
+window.onload = function(){
+    var imgs = document.querySelectorAll("img");
+    for (var i=0;i<imgs.length;i++){
+        imgs[i].onclick = showBigPicture;
+        imgs[i].onerror = function(){
+            alert("Файл не найден!")
+        }
+    }
+}
 
+function showBigPicture(e){
+    var bpDiv = document.getElementById("bPict");
+    bpDiv.innerHTML = "";
+    srcIcon = Event.target;
+    srcName = this.id.split("_");
+    dstName = "./img/big/"+srcName[1]+".jpg";
+    dstImg = document.createElement("img");
+    dstImg.src = dstName;
+    dstImg.width = "100";
+    dstImg.height = "50";
+    //bpDiv.innerHTML = dstImg;
+    bpDiv.appendChild(dstImg);
+}
 
 //2. Реализовать модуль корзины. Создать блок товаров и блок корзины. У каждого товара есть кнопка «Купить», 
 //при нажатии на которую происходит добавление имени и цены товара в блок корзины. Корзина должна уметь 
