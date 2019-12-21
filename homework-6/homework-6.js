@@ -25,10 +25,7 @@ window.onload = function(){
     var imgs = document.querySelectorAll("img");
     for (var i=0;i<imgs.length;i++){
         imgs[i].onclick = showBigPicture;
-        imgs[i].onerror = function(){
-            alert("Файл не найден!")
         }
-    }
 }
 
 function showBigPicture(e){
@@ -41,7 +38,10 @@ function showBigPicture(e){
     dstImg.src = dstName;
     dstImg.width = "100";
     dstImg.height = "50";
-    //bpDiv.innerHTML = dstImg;
+    dstImg.onerror = function(){
+            alert("Файл не найден!");
+    }
+    bpDiv.innerHTML = "";
     bpDiv.appendChild(dstImg);
 }
 
