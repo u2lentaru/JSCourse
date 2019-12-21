@@ -1,6 +1,26 @@
 //1. Доработать функцию замены картинки в галерее таким образом, чтобы она проверяла наличие картинки по 
 //указанному в src адресу.
 
+//HTML
+/*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="bPict">Big Picture</div>
+<div>
+    <img src="./img/small/1.pg" alt="img_1" id="img_1">
+    <img src="./img/small/2.pg" alt="img_2" id="img_2">
+    <img src="./img/small/3.pg" alt="img_3" id="img_3">
+</div>
+<script src="hw_6_1.js">
+</script>
+</body>
+</html>*/
+
+//hw_6_1.js
 
 
 //2. Реализовать модуль корзины. Создать блок товаров и блок корзины. У каждого товара есть кнопка «Купить», 
