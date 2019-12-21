@@ -21,6 +21,7 @@
 </html>*/
 
 //hw_6_1.js
+
 window.onload = function(){
     var imgs = document.querySelectorAll("img");
     for (var i=0;i<imgs.length;i++){
@@ -28,7 +29,7 @@ window.onload = function(){
         }
 }
 
-function showBigPicture(e){
+function showBigPicture(){
     var bpDiv = document.getElementById("bPict");
     bpDiv.innerHTML = "";
     srcIcon = Event.target;
