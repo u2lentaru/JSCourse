@@ -11,9 +11,9 @@
 <body>
 <div id="bPict">Big Picture</div>
 <div>
-    <img src="./img/small/1.pg" alt="img_1" id="img_1">
-    <img src="./img/small/2.pg" alt="img_2" id="img_2">
-    <img src="./img/small/3.pg" alt="img_3" id="img_3">
+    <img src="./img/small/1.jpg" alt="img_1" id="img_1">
+    <img src="./img/small/2.jpg" alt="img_2" id="img_2">
+    <img src="./img/small/3.jpg" alt="img_3" id="img_3">
 </div>
 <script src="hw_6_1.js">
 </script>
