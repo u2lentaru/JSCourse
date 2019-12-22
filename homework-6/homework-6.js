@@ -93,3 +93,23 @@ function showBigPicture(){
 </html>*/
 
 //hw_6_3.js
+
+
+window.onload = function(){
+    var prevButton = document.getElementById("prev");
+    var nextButton = document.getElementById("next");
+    prevButton.onclick = showPrevPict;
+    nextButton.onclick = showNextPict;
+}
+
+function showPrevPict(){
+    var imgBigPict = document.getElementById("imgBigPict");
+    //imgBigPict.src = 
+    document.write("prev");
+}
+
+function showNextPict(){
+    var imgBigPict = document.getElementById("imgBigPict");
+    //imgBigPict.src=
+    document.write("next");
+}
