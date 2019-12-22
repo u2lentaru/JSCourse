@@ -75,3 +75,23 @@ function showBigPicture(){
 //быть стрелки «вперед» и «назад», по нажатию на которые происходит замена изображения на следующее или 
 //предыдущее.
 
+//HTML
+/*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="bPict">Big Picture</div>
+<div>
+    <img src="./img/small/1.jpg" width="50" height="30" alt="img_1" id="img_1">
+    <img src="./img/small/2.jpg" width="50" height="30" alt="img_2" id="img_2">
+    <img src="./img/small/3.jpg" width="50" height="30" alt="img_3" id="img_3">
+</div>
+<script src="hw_6_3.js">
+</script>
+</body>
+</html>*/
+
+//hw_6_3.js
