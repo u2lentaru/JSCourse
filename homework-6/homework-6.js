@@ -42,8 +42,7 @@ function showBigPicture(){
     dstImg.onerror = function(){
             alert("Файл не найден!");
     }
-    bpDiv.innerHTML = "";
-    bpDiv.appendChild(dstImg);
+    bpDiv.append(dstImg);
 }
 
 //2. Реализовать модуль корзины. Создать блок товаров и блок корзины. У каждого товара есть кнопка «Купить», 
