@@ -95,6 +95,11 @@ function showBigPicture(){
 //hw_6_3.js
 
 
+var imgs = [];
+var currImg = 3000000;
+imgs[0]="./img/small/1.jpg";
+imgs[1]="./img/small/2.jpg";
+imgs[2]="./img/small/3.jpg";
 window.onload = function(){
     var prevButton = document.getElementById("prev");
     var nextButton = document.getElementById("next");
@@ -104,12 +109,12 @@ window.onload = function(){
 
 function showPrevPict(){
     var imgBigPict = document.getElementById("imgBigPict");
-    //imgBigPict.src = 
-    document.write("prev");
+    imgBigPict.src = imgs[(currImg-1)%3];
+    currImg--;
 }
 
 function showNextPict(){
     var imgBigPict = document.getElementById("imgBigPict");
-    //imgBigPict.src=
-    document.write("next");
+    imgBigPict.src=imgs[(currImg+1)%3];
+    currImg++;
 }
