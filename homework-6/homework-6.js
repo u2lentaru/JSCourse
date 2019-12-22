@@ -57,7 +57,7 @@ function showBigPicture(){
     <title>Document</title>
 </head>
 <body>
-<div id="bPict">Big Picture</div>
+<div id="bPict">Basket</div>
 <div>
     <img src="./img/small/1.jpg" width="50" height="30" alt="img_1" id="img_1">
     <img src="./img/small/2.jpg" width="50" height="30" alt="img_2" id="img_2">
