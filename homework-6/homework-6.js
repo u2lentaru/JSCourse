@@ -71,6 +71,8 @@ function showBigPicture(){
 //hw_6_2.js
 
 
+
+
 //3) *Добавить в галерею функцию перехода к следующему изображению. По сторонам от большой картинки должны 
 //быть стрелки «вперед» и «назад», по нажатию на которые происходит замена изображения на следующее или 
 //предыдущее.
@@ -83,7 +85,7 @@ function showBigPicture(){
     <title>Document</title>
 </head>
 <body>
-<<div id="bPict"><img src="./img/small/1.jpg" width="200" height="100" alt="img_1" id="img_1"></div>
+<div id="bPict"><img src="./img/small/1.jpg" width="200" height="100" alt="img_1" id="img_1"></div>
 <div>
 <button id="prev">Назад</button><button id="next">Вперед</button>
 </div>
