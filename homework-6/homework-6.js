@@ -148,7 +148,7 @@ function byuGood(){
 
 
 var imgs = [];
-var currImg = 3000000;
+var currImg = 3;
 imgs[0]="./img/small/1.jpg";
 imgs[1]="./img/small/2.jpg";
 imgs[2]="./img/small/3.jpg";
@@ -163,6 +163,9 @@ function showPrevPict(){
     var imgBigPict = document.getElementById("imgBigPict");
     imgBigPict.src = imgs[(currImg-1)%3];
     currImg--;
+    if (currImg == 0) {
+        currImg = 3;
+    }
 }
 
 function showNextPict(){
