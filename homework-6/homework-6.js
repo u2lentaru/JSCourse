@@ -57,11 +57,8 @@ function showBigPicture(){
     <title>Document</title>
 </head>
 <body>
-<div id="bPict">Basket</div>
-<div>
-    <img src="./img/small/1.jpg" width="50" height="30" alt="img_1" id="img_1">
-    <img src="./img/small/2.jpg" width="50" height="30" alt="img_2" id="img_2">
-    <img src="./img/small/3.jpg" width="50" height="30" alt="img_3" id="img_3">
+<div id="cart">cart</div>
+<div id="goods">
 </div>
 <script src="hw_6_2.js">
 </script>
@@ -70,8 +67,38 @@ function showBigPicture(){
 
 //hw_6_2.js
 
+var goods = [];
+goods[0]={
+    "id": "1",
+    "name": "Notebook Lenovo",
+    "price": "18000",
+    "img": "./img/small/1.jpg"
+};
+goods[1]={
+    "id": "2",
+    "name": "Apple ipad",
+    "price": "35000",
+    "img": "./img/small/2.jpg"
+};
+goods[2]={
+    "id": "3",
+    "name": "Samsung Galaxy",
+    "price": "20000",
+    "img": "./img/small/3.jpg"
+};
 
-
+window.onload = function(){
+    var goodsDiv = document.getElementById("goods");
+    for (var i in goods){
+        var goodDiv = document.createElement("div");
+        goodsDiv.append(goodDiv);
+        var goodImg = document.createElement("img");
+        goodImg.src = goods[i].img;
+        goodImg.height = "100";
+        goodImg.width = "200";
+        goodDiv.append(goodImg);
+    }
+}
 
 //3) *Добавить в галерею функцию перехода к следующему изображению. По сторонам от большой картинки должны 
 //быть стрелки «вперед» и «назад», по нажатию на которые происходит замена изображения на следующее или 
