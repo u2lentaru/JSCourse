@@ -68,8 +68,7 @@ function showBigPicture(){
 //hw_6_2.js
 
 var goods = [];
-var curri;
-goods[0]={
+goods[0] = {
     "id": "1",
     "name": "Notebook Lenovo",
     "price": "18000",
@@ -118,7 +117,7 @@ window.onload = function(){
 function byuGood(){
     var cartDiv = document.getElementById("cart");
     var cartGoodName = document.createElement("p");
-    cartGoodName.innerHTML = goods[this.id].name;
+    cartGoodName.innerHTML = goods[this.id].name +" "+goods[this.id].price;
     cartDiv.append(cartGoodName);
     var sum = document.getElementById("sum");
     sum.innerHTML = parseInt(sum.innerHTML)+parseInt(goods[this.id].price);
