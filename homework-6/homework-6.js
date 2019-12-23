@@ -56,7 +56,7 @@ function showBigPicture(){
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
-<body>
+<p id="sum">0</p>
 <div id="cart">cart</div>
 <div id="goods">
 </div>
@@ -68,19 +68,20 @@ function showBigPicture(){
 //hw_6_2.js
 
 var goods = [];
+var curri;
 goods[0]={
     "id": "1",
     "name": "Notebook Lenovo",
     "price": "18000",
     "img": "./img/small/1.jpg"
 };
-goods[1]={
+goods[1] = {
     "id": "2",
     "name": "Apple ipad",
     "price": "35000",
     "img": "./img/small/2.jpg"
 };
-goods[2]={
+goods[2] = {
     "id": "3",
     "name": "Samsung Galaxy",
     "price": "20000",
@@ -96,8 +97,31 @@ window.onload = function(){
         goodImg.src = goods[i].img;
         goodImg.height = "100";
         goodImg.width = "200";
+        goodImg.padding = "10";
         goodDiv.append(goodImg);
+        var goodName = document.createElement("p");
+        goodName.innerHTML = goods[i].name;
+        goodDiv.append(goodName);
+        var goodPrice = document.createElement("p");
+        goodPrice.innerHTML = goods[i].price;
+        goodDiv.append(goodPrice);
+        var byuButton = document.createElement("button");
+        byuButton.id = i;
+        byuButton.onclick = byuGood;
+        byuButton.innerHTML = "Купить";
+        goodDiv.append(byuButton);
+        var br = document.createElement("br");
+        goodDiv.append(br);            
     }
+}
+
+function byuGood(){
+    var cartDiv = document.getElementById("cart");
+    var cartGoodName = document.createElement("p");
+    cartGoodName.innerHTML = goods[this.id].name;
+    cartDiv.append(cartGoodName);
+    var sum = document.getElementById("sum");
+    sum.innerHTML = parseInt(sum.innerHTML)+parseInt(goods[this.id].price);
 }
 
 //3) *Добавить в галерею функцию перехода к следующему изображению. По сторонам от большой картинки должны 
