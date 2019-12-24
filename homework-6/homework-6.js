@@ -156,8 +156,7 @@ window.onload = function(){
 
 function showPrevPict(){
     var imgBigPict = document.getElementById("imgBigPict");
-    imgBigPict.src = imgs[(currImg-1)%imgs.length];
-    currImg--;
+    imgBigPict.src = imgs[(--currImg)%imgs.length];
     if (currImg == 0) {
         currImg = imgs.length;
     }
@@ -165,6 +164,5 @@ function showPrevPict(){
 
 function showNextPict(){
     var imgBigPict = document.getElementById("imgBigPict");
-    imgBigPict.src=imgs[(currImg+1)%imgs.length];
-    currImg++;
+    imgBigPict.src=imgs[(++currImg)%imgs.length];
 }
