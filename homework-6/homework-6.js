@@ -56,8 +56,9 @@ function showBigPicture(){
     <title>Document</title>
 </head>
 <body>
-<p id="sum">0</p>
-<div id="cart">cart</div>
+<p id="sum">Сумма: 0</p>
+<div margin="10" id="basket">В корзине:</div>
+<hr size="3">
 <div id="goods">
 </div>
 <script src="hw_6_2.js">
