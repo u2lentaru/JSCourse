@@ -56,11 +56,11 @@ function showBigPicture(){
     <title>Document</title>
 </head>
 <body>
-<p id="sum">Сумма: 0</p>
-<div margin="10" id="basket">В корзине:</div>
-<hr size="3">
 <div id="goods">
 </div>
+<hr size="3">
+<p id="sum">Сумма: 0</p>
+<div margin="10" id="basket">В корзине:</div>
 <script src="hw_6_2.js">
 </script>
 </body>
@@ -69,22 +69,21 @@ function showBigPicture(){
 //hw_6_2.js
 
 var sum = 0;
-var goods = [];
-goods[0] = {
+var goods = [{
     "name": "Notebook Lenovo",
     "price": "18000",
     "img": "./img/small/1.jpg"
-};
-goods[1] = {
+},
+{
     "name": "Apple ipad",
     "price": "35000",
     "img": "./img/small/2.jpg"
-};
-goods[2] = {
+},
+{
     "name": "Samsung Galaxy",
     "price": "20000",
     "img": "./img/small/3.jpg"
-};
+}];
 
 window.onload = function(){
     var goodsDiv = document.getElementById("goods");
@@ -93,8 +92,8 @@ window.onload = function(){
         goodsDiv.append(goodDiv);
         var goodImg = document.createElement("img");
         goodImg.src = goods[i].img;
-        goodImg.height = "100";
-        goodImg.width = "200";
+        goodImg.height = "50";
+        goodImg.width = "100";
         goodImg.margin = "10px";
         goodDiv.append(goodImg);
         var goodName = document.createElement("p");
