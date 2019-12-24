@@ -32,7 +32,6 @@ window.onload = function(){
 function showBigPicture(){
     var bpDiv = document.getElementById("bPict");
     bpDiv.innerHTML = "";
-    srcIcon = Event.target;
     srcName = this.id.split("_");
     dstName = "./img/big/"+srcName[1]+".jpg";
     dstImg = document.createElement("img");
