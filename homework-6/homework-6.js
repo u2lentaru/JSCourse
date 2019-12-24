@@ -156,8 +156,6 @@ window.onload = function(){
 
 function showPrevPict(){
     var imgBigPict = document.getElementById("imgBigPict");
-    console.log(currImg);
-    console.log(imgs[(currImg-1)%3]);
     imgBigPict.src = imgs[(currImg-1)%3];
     currImg--;
     if (currImg == 0) {
