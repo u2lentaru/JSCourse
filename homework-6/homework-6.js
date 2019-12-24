@@ -94,7 +94,7 @@ window.onload = function(){
         goodImg.src = goods[i].img;
         goodImg.height = "50";
         goodImg.width = "100";
-        goodImg.margin = "10px";
+        goodImg.margin = "10";
         goodDiv.append(goodImg);
         var goodName = document.createElement("p");
         goodName.innerHTML = goods[i].name;
