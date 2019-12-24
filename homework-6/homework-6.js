@@ -55,6 +55,7 @@ function showBigPicture(){
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+<body>
 <p id="sum">0</p>
 <div id="cart">cart</div>
 <div id="goods">
