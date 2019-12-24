@@ -36,8 +36,8 @@ function showBigPicture(){
     dstName = "./img/big/"+srcName[1]+".jpg";
     dstImg = document.createElement("img");
     dstImg.src = dstName;
-    dstImg.width = "100";
-    dstImg.height = "50";
+    dstImg.width = "300";
+    dstImg.height = "150";
     dstImg.onerror = function(){
             alert("Файл не найден!");
     }
