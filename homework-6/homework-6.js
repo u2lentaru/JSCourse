@@ -60,7 +60,7 @@ function showBigPicture(){
 </div>
 <hr size="3">
 <p id="sum">Сумма: 0</p>
-<div margin="10" id="basket">В корзине:</div>
+<div id="basket">В корзине:</div>
 <script src="hw_6_2.js">
 </script>
 </body>
