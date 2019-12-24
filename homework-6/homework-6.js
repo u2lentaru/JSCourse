@@ -68,21 +68,19 @@ function showBigPicture(){
 
 //hw_6_2.js
 
+var sum = 0;
 var goods = [];
 goods[0] = {
-    "id": "1",
     "name": "Notebook Lenovo",
     "price": "18000",
     "img": "./img/small/1.jpg"
 };
 goods[1] = {
-    "id": "2",
     "name": "Apple ipad",
     "price": "35000",
     "img": "./img/small/2.jpg"
 };
 goods[2] = {
-    "id": "3",
     "name": "Samsung Galaxy",
     "price": "20000",
     "img": "./img/small/3.jpg"
@@ -97,7 +95,7 @@ window.onload = function(){
         goodImg.src = goods[i].img;
         goodImg.height = "100";
         goodImg.width = "200";
-        goodImg.padding = "10";
+        goodImg.margin = "10px";
         goodDiv.append(goodImg);
         var goodName = document.createElement("p");
         goodName.innerHTML = goods[i].name;
@@ -116,12 +114,13 @@ window.onload = function(){
 }
 
 function byuGood(){
-    var cartDiv = document.getElementById("cart");
-    var cartGoodName = document.createElement("p");
-    cartGoodName.innerHTML = goods[this.id].name +" "+goods[this.id].price;
-    cartDiv.append(cartGoodName);
-    var sum = document.getElementById("sum");
-    sum.innerHTML = parseInt(sum.innerHTML)+parseInt(goods[this.id].price);
+    var basketDiv = document.getElementById("basket");
+    var basketGoodName = document.createElement("p");
+    basketGoodName.innerHTML = goods[this.id].name +" "+goods[this.id].price;
+    basketDiv.append(basketGoodName);
+    var psum = document.getElementById("sum");
+    sum += parseFloat(goods[this.id].price); 
+    psum.innerHTML ="Сумма: "+sum;
 }
 
 //3) *Добавить в галерею функцию перехода к следующему изображению. По сторонам от большой картинки должны 
@@ -149,6 +148,7 @@ function byuGood(){
 
 var imgs = ["./img/small/1.jpg","./img/small/2.jpg","./img/small/3.jpg"];
 var currImg = imgs.length;
+
 window.onload = function(){
     var prevButton = document.getElementById("prev");
     var nextButton = document.getElementById("next");
