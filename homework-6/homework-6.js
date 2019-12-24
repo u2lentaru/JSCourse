@@ -134,7 +134,7 @@ function byuGood(){
     <title>Document</title>
 </head>
 <body>
-<div id="bPict"><img src="./img/small/1.jpg" width="200" height="100" alt="img_1" id="img_1"></div>
+<div id="bPict"><img src="./img/small/1.jpg" width="200" height="100" alt="img_1" id="imgBigPict"></div>
 <div>
 <button id="prev">Назад</button><button id="next">Вперед</button>
 </div>
@@ -145,12 +145,8 @@ function byuGood(){
 
 //hw_6_3.js
 
-
-var imgs = [];
+var imgs = ["./img/small/1.jpg","./img/small/2.jpg","./img/small/3.jpg"];
 var currImg = 3;
-imgs[0]="./img/small/1.jpg";
-imgs[1]="./img/small/2.jpg";
-imgs[2]="./img/small/3.jpg";
 window.onload = function(){
     var prevButton = document.getElementById("prev");
     var nextButton = document.getElementById("next");
@@ -160,6 +156,8 @@ window.onload = function(){
 
 function showPrevPict(){
     var imgBigPict = document.getElementById("imgBigPict");
+    console.log(currImg);
+    console.log(imgs[(currImg-1)%3]);
     imgBigPict.src = imgs[(currImg-1)%3];
     currImg--;
     if (currImg == 0) {
