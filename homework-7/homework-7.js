@@ -1,10 +1,10 @@
 //1. Выводить счёт в режиме реального времени.
-//Добавлены строки js: 20,
+//Добавлены строки js: 20,25,26
+//html: 11
 
 //2. Генерировать временные препятствия на поле.
 
 //3. *Убрать границы поля. Т.е. при пересечении границы поля змейка появляется с противоположной стороны.
-
 
 
 // Глобальные переменные:                            
@@ -22,7 +22,8 @@ var currentScore; //Текущий счёт
 function init() {
     prepareGameField(); // Генерация поля
 
-    currentScore - document.getElementById()
+    currentScore = document.getElementById("current-score");
+    currentScore.innerHTML("Счёт: "+score);
 
     var wrap = document.getElementsByClassName('wrap')[0];
     // Подгоняем размер контейнера под игровое поле
