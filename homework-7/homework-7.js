@@ -23,7 +23,7 @@ function init() {
     prepareGameField(); // Генерация поля
 
     currentScore = document.getElementById("current-score");
-    currentScore.innerHTML("Счёт: "+score);
+    currentScore.innerHTML = "Счёт: "+score;
 
     var wrap = document.getElementsByClassName('wrap')[0];
     // Подгоняем размер контейнера под игровое поле
