@@ -1,4 +1,5 @@
 //1. Выводить счёт в режиме реального времени.
+//Добавлены строки js: 20,
 
 //2. Генерировать временные препятствия на поле.
 
@@ -16,9 +17,12 @@ var gameIsRunning = false; // Запущена ли игра
 var snake_timer; // Таймер змейки
 var food_timer; // Таймер для еды
 var score = 0; // Результат
+var currentScore; //Текущий счёт
 
 function init() {
     prepareGameField(); // Генерация поля
+
+    
 
     var wrap = document.getElementsByClassName('wrap')[0];
     // Подгоняем размер контейнера под игровое поле
