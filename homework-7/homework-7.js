@@ -124,6 +124,9 @@ function move() {
     if (direction == 'x-') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x - 1))[0];
         //появляется с противоположной стороны влево
+        if (coord_x == 0){
+            new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x + (FIELD_SIZE_X -1)))[0];
+        }
 
     }
     else if (direction == 'x+') {
