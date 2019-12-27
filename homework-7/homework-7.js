@@ -5,7 +5,7 @@
 //css: 36-38; js: 84, 157-160, 215, 228-280
 
 //3. *Убрать границы поля. Т.е. при пересечении границы поля змейка появляется с противоположной стороны.
-
+//js: 126
 
 // Глобальные переменные:                            
 var FIELD_SIZE_X = 20;//строки
@@ -123,15 +123,20 @@ function move() {
     // Определяем новую точку
     if (direction == 'x-') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x - 1))[0];
+        //появляется с противоположной стороны влево
+
     }
     else if (direction == 'x+') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x + 1))[0];
+        //появляется с противоположной стороны вправо
     }
     else if (direction == 'y+') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y - 1) + '-' + (coord_x))[0];
+        //появляется с противоположной стороны вверх
     }
     else if (direction == 'y-') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y + 1) + '-' + (coord_x))[0];
+        //появляется с противоположной стороны вниз
     }
 
     // Проверки
