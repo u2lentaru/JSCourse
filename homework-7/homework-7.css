@@ -33,3 +33,6 @@ td.game-table-cell{
     margin: 30px auto 0;
     text-align: center;
 }
+.obstacle-unit{
+    background-color: blue;
+}
