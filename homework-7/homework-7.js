@@ -81,7 +81,7 @@ function startGame() {
 
     snake_timer = setInterval(move, SNAKE_SPEED);//каждые 200мс запускаем функцию move
     setTimeout(createFood, 5000);
-    setTimeout(createObstacle, 10000);
+    setInterval(createObstacle, 10000);
 }
 
 /**
@@ -247,6 +247,10 @@ function haveObstacle(unit) {
  */
 function createObstacle() {
     var obstacleCreated = false;
+
+    if (!gameIsRunning){
+        obstacleCreated = true;
+    }
 
     while (!obstacleCreated) { //пока препятствие не создали
         // рандом
