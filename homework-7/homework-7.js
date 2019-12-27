@@ -218,6 +218,54 @@ function createFood() {
     }
 }
 
+////////////////////// Препятствие
+/**
+ * проверка на препятствие
+ * @param unit
+ * @returns {boolean}
+ */
+function haveObstacle(unit) {
+    var check = false;
+
+    var unit_classes = unit.getAttribute('class').split(' ');
+
+    // Если препятствие
+    if (unit_classes.includes('obstacle-unit')) {
+        check = true;
+        createObstacle();
+    }
+    return check;
+}
+
+/**
+ * Создание препятствия
+ */
+function createObstacle() {
+    var obstacleCreated = false;
+
+    while (!obstacleCreated) { //пока препятствие не создали
+        // рандом
+        var obstacle_x = Math.floor(Math.random() * FIELD_SIZE_X);
+        var obstacle_y = Math.floor(Math.random() * FIELD_SIZE_Y);
+
+        var obstacle_cell = document.getElementsByClassName('cell-' + obstacle_y + '-' + obstacle_x)[0];
+        var obstacle_cell_classes = obstacle_cell.getAttribute('class').split(' ');
+
+        // проверка на змейку
+        if (!obstacle_cell_classes.includes('snake-unit')) {
+            var classes = '';
+            for (var i = 0; i < obstacle_cell_classes.length; i++) {
+                classes += obstacle_cell_classes[i] + ' ';
+            }
+
+            obstacle_cell.setAttribute('class', classes + 'obstacle-unit');
+            obstacleCreated = true;
+        }
+    }
+}
+
+//////////////////////
+
 /**
  * Изменение направления движения змейки
  * @param e - событие
