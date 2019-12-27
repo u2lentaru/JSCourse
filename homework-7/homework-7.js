@@ -261,6 +261,8 @@ function createObstacle() {
             obstacle_cell.setAttribute('class', classes + 'obstacle-unit');
             obstacleCreated = true;
         }
+
+        //проверка на еду
     }
 }
 
