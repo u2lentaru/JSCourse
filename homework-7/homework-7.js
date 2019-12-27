@@ -139,6 +139,9 @@ function move() {
     else if (direction == 'y+') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y - 1) + '-' + (coord_x))[0];
         //появляется с противоположной стороны вверх
+        if (coord_y == 0){
+            new_unit = document.getElementsByClassName('cell-' + (coord_y + (FIELD_SIZE_Y -1)) + '-' + coord_x)[0];
+        }
     }
     else if (direction == 'y-') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y + 1) + '-' + (coord_x))[0];
