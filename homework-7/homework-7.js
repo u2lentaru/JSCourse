@@ -146,6 +146,9 @@ function move() {
     else if (direction == 'y-') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y + 1) + '-' + (coord_x))[0];
         //появляется с противоположной стороны вниз
+        if (coord_y == (FIELD_SIZE_Y - 1)){
+            new_unit = document.getElementsByClassName('cell-' + (coord_y - (FIELD_SIZE_Y -1)) + '-' + (coord_x))[0];
+        }
     }
 
     // Проверки
