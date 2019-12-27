@@ -238,7 +238,6 @@ function haveObstacle(unit) {
     // Если препятствие
     if (unit_classes.includes('obstacle-unit')) {
         check = true;
-        createObstacle();
     }
     return check;
 }
@@ -248,9 +247,6 @@ function haveObstacle(unit) {
  */
 function createObstacle() {
     var obstacleCreated = false;
-    if (!gameIsRunning){
-        obstacleCreated = true;
-    }
 
     while (!obstacleCreated) { //пока препятствие не создали
         // рандом
