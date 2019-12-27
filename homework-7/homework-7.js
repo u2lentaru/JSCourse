@@ -2,7 +2,7 @@
 //Добавлены/изменены строки js: 20,25,26,189; html: 11
 
 //2. Генерировать временные препятствия на поле.
-//css: 36-38; js: 157-160, 221-270
+//css: 36-38; js: 84, 157-160, 227-279
 
 //3. *Убрать границы поля. Т.е. при пересечении границы поля змейка появляется с противоположной стороны.
 
@@ -260,8 +260,9 @@ function createObstacle() {
         var obstacle_cell = document.getElementsByClassName('cell-' + obstacle_y + '-' + obstacle_x)[0];
         var obstacle_cell_classes = obstacle_cell.getAttribute('class').split(' ');
 
-        // проверка на змейку
-        if (!obstacle_cell_classes.includes('snake-unit')) {
+        // проверка на змейку и еду
+        //if (!obstacle_cell_classes.includes('snake-unit')) {
+        if ((!obstacle_cell_classes.includes('snake-unit')) && (!obstacle_cell_classes.includes('food-unit'))) {
             var classes = '';
             for (var i = 0; i < obstacle_cell_classes.length; i++) {
                 classes += obstacle_cell_classes[i] + ' ';
@@ -271,8 +272,7 @@ function createObstacle() {
             obstacleCreated = true;
         }
 
-        //проверка на еду
-
+        
     }
 }
 
