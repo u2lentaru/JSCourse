@@ -40,7 +40,7 @@ function currentScore(){
 //}
 //b(1, 2, 3);
 
-
+//10 так как arguments[2] присвоено значение 10.
 
 //function a() {
 //    alert(this);
