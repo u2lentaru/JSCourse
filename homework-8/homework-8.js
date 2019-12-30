@@ -9,6 +9,8 @@ function currentScore(){
     }
 }
 
+
+
 //2. Не выполняя кода, ответить, что выведет браузер и почему:
 //if (!("a" in window)) {
 //    var a = 1;
@@ -44,3 +46,5 @@ function currentScore(){
 //    alert(this);
 //}
 //a.call(null);
+
+//объект window, так как this имеет значение null.
