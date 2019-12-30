@@ -32,7 +32,7 @@ function a(x) {
 var a;
 alert(a);
 
-//
+//переменная a не инициализирована => выводится код функции
 
 function b(x, y, a) {
     arguments[2] = 10;
