@@ -17,7 +17,7 @@ function currentScore(){
 //}
 //alert(a);
 
-
+//1 - "a" in window даёт false => a объявляется со значением 1
 
 //var b = function a(x) {
 //    x && a(--x);
@@ -32,7 +32,7 @@ function currentScore(){
 //var a;
 //alert(a);
 
-
+//
 
 //function b(x, y, a) {
 //    arguments[2] = 10;
